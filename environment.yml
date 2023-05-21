@@ -1,4 +1,4 @@
-name: ASV-clustering
+name: chimera-dbOTU-pipeline
 channels:
   - conda-forge
   - bioconda
@@ -11,4 +11,4 @@ dependencies:
   - biopython
   - tqdm
   - vsearch
-  - dbotu
+  - dbotu3

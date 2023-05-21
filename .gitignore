@@ -11,3 +11,6 @@ temporary_18S/
 logs_18S/
 chimeras_18S/
 OTUs_18S/
+
+#ignore slurm output
+slurm-*
