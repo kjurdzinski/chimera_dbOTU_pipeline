@@ -11,4 +11,3 @@ dependencies:
   - biopython
   - tqdm
   - vsearch
-  - dbotu3
