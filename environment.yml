@@ -10,3 +10,5 @@ dependencies:
   - scikit-learn
   - biopython
   - tqdm
+  - vsearch
+  - dbotu
