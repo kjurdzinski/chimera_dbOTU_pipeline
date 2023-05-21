@@ -8,6 +8,6 @@
 #SBATCH -t 06:00:00
 #SBATCH -J chimera_dbOTU_clustering
 
-cd /crex/proj/snic2020-6-126/projects/plankton_monitoring/P20310/ASV_reannotation
+cd /crex/proj/snic2020-6-126/projects/plankton_monitoring/P20310/ASV_reannotation/chimera_dbOTU_pipeline
 conda activate ASV-clustering
 bash workflow_all.sh 16S

@@ -8,9 +8,6 @@
 #SBATCH -t 00:20:00
 #SBATCH -J creating_ASV_clustering_env
 
-# cd /crex/proj/snic2020-6-126/projects/plankton_monitoring/P20310/ASV_reannotation/ASV-clustering
-# conda env create -f environment.yml
-
-conda activate ASV-clustering
-conda install -c cduvallet -c conda-forge dbotu
+cd /crex/proj/snic2020-6-126/projects/plankton_monitoring/P20310/ASV_reannotation/ASV-clustering/chimera_dbOTU_pipeline
+conda env create -f environment.yml
 
