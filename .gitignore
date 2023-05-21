@@ -1,0 +1,11 @@
+# Ignore files in these directories
+data_16S/*
+data_18S/*
+
+# Ignore  these directories
+temporary_16S/
+chimeras_16S/
+OTUs_16S/
+temporary_18S/
+chimeras_18S/
+OTUs_18S/
