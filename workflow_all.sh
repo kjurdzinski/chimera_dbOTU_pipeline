@@ -6,6 +6,10 @@ if [ ! -d "temporary_$1" ]
 then
     mkdir temporary_$1
 fi
+if [ ! -d "logs_$1" ] 
+then
+    mkdir logs_$1
+fi
 python3 scripts/sort_ASVs_by_abundance.py data_$1/asv_seqs.fasta \
      -c data_$1/asv_counts.tsv -o temporary_$1/asv_seqs_sorted.fasta
 vsearch --threads 6 --dn 1.4 --mindiffs 3 \
@@ -14,7 +18,7 @@ vsearch --threads 6 --dn 1.4 --mindiffs 3 \
                 --nonchimeras chimeras_$1/nonchimeras.fasta --uchimealns chimeras_$1/uchimealns.out \
                 --uchimeout chimeras_$1/uchimeout.txt --uchimealns chimeras_$1/uchimealns.txt \
                 --uchime_denovo temporary_$1/asv_seqs_sorted.fasta  \
-                >logs/log_uchime.txt 2>&1
+                >logs_$1/log_uchime.txt 2>&1
 if [ ! -d "OTUs_$1" ] 
 then
     mkdir OTUs_$1

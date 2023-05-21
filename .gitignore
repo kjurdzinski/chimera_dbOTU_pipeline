@@ -4,8 +4,10 @@ data_18S/*
 
 # Ignore  these directories
 temporary_16S/
+logs_16S/
 chimeras_16S/
 OTUs_16S/
 temporary_18S/
+logs_18S/
 chimeras_18S/
 OTUs_18S/
