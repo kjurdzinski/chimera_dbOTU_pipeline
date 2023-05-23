@@ -28,6 +28,6 @@ python3 scripts/remove_size_from_chimera_fasta.py chimeras_$1/nonchimeras.fasta 
     -o chimeras_$1/nonchimeras_clean.fasta
 python3 scripts/adjust_ASV_counts_for_dbOTU.py data_$1/asv_counts.tsv \
      -f chimeras_$1/nonchimeras_clean.fasta -o temporary_$1/asv_counts_dbOTU.tsv
-python3 scripts/dbotu3.py temporary_$1/asv_counts_dbOTU.tsv chimeras_$1/nonchimeras_clean.fasta \
-    -o OTUs_$1/OTUs.txt --membership OTUs_$1/OTUs_membership.txt --log OTUs_$1/log.txt \
-    -d 0.03 -a 0 
+dbotu3.py temporary_$1/asv_counts_dbOTU.tsv chimeras_$1/nonchimeras_clean.fasta \
+    -o OTUs_$1/OTUs.txt --membership OTUs_$1/OTUs_membership.txt --log logs_$1/OTU_log.txt \
+    -d $d -a 0 -p $p

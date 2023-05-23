@@ -10,5 +10,5 @@
 
 cd /crex/proj/snic2020-6-126/projects/plankton_monitoring/P20310/ASV_reannotation/chimera_dbOTU_pipeline
 conda activate chimera-dbOTU-pipeline
-bash workflow_all.sh 16S
-bash workflow_all.sh 18S
+bash workflow_all.sh 16S -d 0.03 -p 0.001
+bash workflow_all.sh 18S -d 0.1
