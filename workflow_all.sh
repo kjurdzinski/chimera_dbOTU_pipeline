@@ -10,6 +10,7 @@ if [ ! -d "logs_$1" ]
 then
     mkdir logs_$1
 fi
+python3 scripts/adjust_count_table_format.py -c data_$1/asv_counts.tsv
 python3 scripts/sort_ASVs_by_abundance.py data_$1/asv_seqs.fasta \
      -c data_$1/asv_counts.tsv -o temporary_$1/asv_seqs_sorted.fasta
 vsearch --threads 6 --dn 1.4 --mindiffs 3 \
