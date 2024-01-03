@@ -19,6 +19,7 @@ Make data_${your_data_type} directories.
 File formats:
 asv_seqs.fasta - ASV names same as in asv_counts.tsv
 asv_counts.tsv - samples as columns, row names corresponding to your ASV IDs
+Important: Files need to have those names!
 
 ### Notes
 
