@@ -1,4 +1,4 @@
-## VSearch and dbOTU for metabarcoding-based ecological species
+## VSearch and dbOTU for metabarcoding-based ecogenetic species
 
 ### Workflow
 
