@@ -9,8 +9,12 @@
 3. Run the pipeline using workflow_all.sh (You can use SLURM_chimera_dbOTU.sh to run a SLURM job, remember to modify according to your needs). Parameters:\
   I. your data type (no prefix), corresponding to ${your_data_type} in the data directory name. E.g. 16S if your data directory is called data_16S\
   II. -d \[0,1\] - maximum genetic distance allowed to be accepted for the species clusters (for dbOTU, see https://dbotu3.readthedocs.io/en/latest/getting-started.html#deciding-on-parameters). Default 0.1, for bacteria 0.03 is recomended\
-  III. -p \[0,1\] - distribution similarity p-value cut-off, 0.0005 by default.
-4. If you downloaded your files and are sure you don't need the intermediate files, you can use clean.sh
+  III. -p \[0,1\] - distribution similarity p-value cut-off, 0.0005 by default.\
+The pipeline runs:\
+  I. chimera reduction with UCHIME v1
+  II. distribution and genetic similarity clustering using dbOTU v3
+
+5. If you downloaded your files and are sure you don't need the intermediate files, you can use clean.sh
    
 
 ### Preparation
@@ -27,4 +31,6 @@ Here we use a stable ddOTU3 version downloaded as python script on May 21, 2023
 
 ### Acknowledgements
 
-This pipeline has been heavily inspired by John Sundh's work: https://github.com/johnne/ASV-clustering
+This pipeline has been heavily inspired by John Sundh's work: https://github.com/johnne/ASV-clustering I also used some of his work.\
+
+This pipeline would obviously also not be possible without the developers of UCHIME v1 and dbOTU v3
