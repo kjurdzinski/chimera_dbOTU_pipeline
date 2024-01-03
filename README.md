@@ -1,6 +1,6 @@
-### VSearch and dbOTU for metabarcoding-based ecological species
+## VSearch and dbOTU for metabarcoding-based ecological species
 
-## Workflow
+### Workflow
 
 1. Create the conda environment for the pipeline (specified in environment.yml, if you are using SLURM you can use the SLURM_clustering_env.sh script to set up a job)
 2. Prepare and upload the necessary files and put them into directories data_${your_data_type}, e.g. data_16S. There should be two files in each of these directories:
@@ -13,17 +13,17 @@
 4. If you downloaded your files and are sure you don't need the intermediate files, you can use clean.sh
    
 
-## Preparation
+### Preparation
 Make data_${your_data_type} directories.
 
 File formats:
 asv_seqs.fasta - ASV names same as in asv_counts.tsv
 asv_counts.tsv - samples as columns, row names corresponding to your ASV IDs
 
-## Notes
+### Notes
 
 Here we use a stable ddOTU3 version downloaded as python script on May 21, 2023
 
-## Acknowledgements
+### Acknowledgements
 
 This pipeline has been heavily inspired by John Sundh's work: https://github.com/johnne/ASV-clustering
