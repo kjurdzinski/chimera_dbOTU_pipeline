@@ -11,8 +11,8 @@
   II. -d \[0,1\] - maximum genetic distance allowed to be accepted for the species clusters (for dbOTU, see https://dbotu3.readthedocs.io/en/latest/getting-started.html#deciding-on-parameters). Default 0.1, for bacteria 0.03 is recomended\
   III. -p \[0,1\] - distribution similarity p-value cut-off, 0.0005 by default.\
 The pipeline runs:\
-  I. Chimera reduction with UCHIME v1\
-  II. Distribution and genetic similarity clustering using dbOTU v3
+  I. Chimera reduction with UCHIME v1.\
+  II. Distribution and genetic similarity clustering using dbOTU v3.
 
 5. If you downloaded your files and are sure you don't need the intermediate files, you can use clean.sh
    
