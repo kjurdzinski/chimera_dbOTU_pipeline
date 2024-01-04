@@ -11,15 +11,15 @@ parser = argparse.ArgumentParser(
                     ''',)
 
 
-parser.add_argument('count')      # fasta file
-parser.add_argument('-f', '--fasta')      # count table
+parser.add_argument('count')      # count table
+parser.add_argument('-f', '--fasta')      # fasta file
 parser.add_argument('-o', '--output')     # name of the output fasta file
 args = parser.parse_args()
 
 # os.chdir('/home/krzjur/ASV-clustering/data/16S')
 
 # Load the TSV file into a pandas dataframe
-df = pd.read_csv(args.count, sep='\t')
+df = pd.read_csv(args.count, sep='\t', index_col=0)
 
 # Load the fasta file into a list of strings
 with open(args.fasta, 'r') as f:
@@ -28,6 +28,8 @@ with open(args.fasta, 'r') as f:
 # Filter out the sequence headers that are not in the count table
 header_lines = [line for line in fasta_lines if line.startswith('>')]
 header_ids = [line.strip()[1:] for line in header_lines]  # extract the sequence IDs from the header lines
+
+print(df.head())
 
 df = df.loc[header_ids]
 
