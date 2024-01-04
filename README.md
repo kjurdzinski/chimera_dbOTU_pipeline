@@ -6,7 +6,7 @@
 2. Sort ASVs (FASTA file) by abundance and state the total number of counts - another requirement for the use of UCHIME.
 3. Run UCHIME V1 to detect and exclude chimeras left unnoticed by previous analyses.
 4. Reformat the FASTA file to include just the ASV IDs.
-5. Reformat the count table for dbOTU.
+5. Reformat the count table for dbOTU - remove the rows which correspond to chimera ASVs.
 6. Run dbOTU to detect ASVs coming from the same species based on their genetic AND distribution similarity.\
 
 Key output (in OTUs_${your_data_type}):
