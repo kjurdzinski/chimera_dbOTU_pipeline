@@ -51,7 +51,7 @@ Important: Files need to have those names!
 
 ### Notes
 
-Here we use a stable ddOTU3 version downloaded as python script on May 21, 2023
+Here we use a stable dbOTU3 version downloaded as a python script on May 21, 2023
 
 ### Acknowledgements
 
