@@ -33,13 +33,17 @@ The pipeline runs:\
 ### Preparation
 Make data_${your_data_type} directories.
 
-File formats:\
+File formats:
+
+
 asv_seqs.fasta - ASV names same as in asv_counts.tsv. \
->ASV_1\
+\>ASV_1\
 TATACGT... (sequence)\
->ASV_2\
+\>ASV_2\
 TATACGT... (sequence)\
-...\
+...
+
+
 asv_counts.tsv - samples as columns, row names corresponding to your ASV IDs.\
 Row and column names in quotations!\
 
